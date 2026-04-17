@@ -1,0 +1,6 @@
+{
+  "version": "1.2.1",
+  "build": 37,
+  "apk_filename": "BaccaSongBook-v1.2.1-build37.apk",
+  "release_notes": "Fix: wskaźnik Tab po edycji piosenki bez tabulatury. Auto-sync z Drive, tryb odtwarzania setlisty, ukryte menu, nagłówek PDF."
+}
