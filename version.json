@@ -1,6 +1,6 @@
 {
   "version": "1.2.1",
-  "build": 37,
-  "apk_filename": "BaccaSongBook-v1.2.1-build37.apk",
-  "release_notes": "Fix: wskaźnik Tab po edycji piosenki bez tabulatury. Auto-sync z Drive, tryb odtwarzania setlisty, ukryte menu, nagłówek PDF."
+  "build": 38,
+  "apk_filename": "BaccaSongBook-v1.2.1-build38.apk",
+  "release_notes": "Integracja Gemini/Gemma AI do wspomagania OCR Dwustopniowe rozpoznawanie: ML Kit (offline) → Gemini Vision (online) Ustawienia AI: klucz API, wybór modelu (Gemini 1.5 Flash, 2.0 Flash, Gemma 3 4B/1"
 }
