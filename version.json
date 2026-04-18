@@ -1,6 +1,8 @@
 {
-  "version": "1.2.1",
-  "build": 38,
-  "apk_filename": "BaccaSongBook-v1.2.1-build38.apk",
-  "release_notes": "Integracja Gemini/Gemma AI do wspomagania OCR Dwustopniowe rozpoznawanie: ML Kit (offline) → Gemini Vision (online) Ustawienia AI: klucz API, wybór modelu (Gemini 1.5 Flash, 2.0 Flash, Gemma 3 4B/1"
+  "version": "1.2.2",
+  "build": 39,
+  "apk_filename": "BaccaSongBook-v1.2.2-build39.apk",
+  "deb_filename": "bacca-songbook_1.2.2_amd64.deb",
+  "exe_filename": "BaccaSongBook-1.2.2-Setup.exe",
+  "release_notes": "Auto-aktualizacja Android/Linux/Windows przez GitHub Releases. Gemini/Gemma OCR."
 }
