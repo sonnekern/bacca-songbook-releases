@@ -1,8 +1,8 @@
 {
-  "version": "1.2.2",
-  "build": 41,
-  "apk_filename": "BaccaSongBook-v1.2.2-build41.apk",
-  "deb_filename": "bacca-songbook_1.2.2_amd64.deb",
-  "exe_filename": "BaccaSongBook-1.2.2-Setup.exe",
-  "release_notes": "Build 41: ukryte menu z logo i wierszem Tomka, folder Drive przeniesiony do ukrytego menu, lepszy wskaźnik pobierania aktualizacji."
+  "version": "1.2.3",
+  "build": 44,
+  "apk_filename": "BaccaSongBook-v1.2.3-build44.apk",
+  "deb_filename": "bacca-songbook_1.2.3_amd64.deb",
+  "exe_filename": "BaccaSongBook-1.2.3-Setup.exe",
+  "release_notes": "Build 44 — sprawdzanie aktualizacji przy starcie, poprawki OCR."
 }
