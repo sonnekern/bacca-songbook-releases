@@ -5,27 +5,136 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="HY6vneELk8aRJany8KdTNg1nGCHj0siVyZt1Sly_850" />
   <title>Bacca SongBook</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@300;400&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Georgia, serif; max-width: 700px; margin: 60px auto; padding: 0 24px; color: #222; }
-    h1 { font-size: 2.2em; margin-bottom: 4px; }
-    .subtitle { color: #666; font-style: italic; margin-bottom: 32px; }
-    .badge { display: inline-block; background: #1a73e8; color: #fff; padding: 10px 22px; border-radius: 6px; text-decoration: none; font-size: 1em; margin: 6px 4px; }
-    .badge:hover { background: #1558b0; }
-    footer { margin-top: 60px; font-size: 0.85em; color: #999; }
-    footer a { color: #999; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      height: 100%;
+      font-family: 'Lato', sans-serif;
+      color: #fff;
+    }
+
+    .hero {
+      min-height: 100vh;
+      background: url('obraz_hq.jpg') center center / cover no-repeat fixed;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.55) 100%);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      padding: 24px;
+    }
+
+    .title {
+      font-family: 'Great Vibes', cursive;
+      font-size: clamp(3.5rem, 10vw, 7rem);
+      letter-spacing: 2px;
+      text-shadow: 0 2px 18px rgba(0,0,0,0.7);
+      line-height: 1.1;
+    }
+
+    .motto {
+      font-size: clamp(0.9rem, 2.5vw, 1.15rem);
+      font-weight: 300;
+      letter-spacing: 3px;
+      color: rgba(255,255,255,0.75);
+      margin-top: 10px;
+      text-transform: lowercase;
+      font-style: italic;
+    }
+
+    .divider {
+      width: 60px;
+      height: 1px;
+      background: rgba(255,255,255,0.4);
+      margin: 32px auto;
+    }
+
+    .desc {
+      font-size: 1rem;
+      font-weight: 300;
+      color: rgba(255,255,255,0.85);
+      max-width: 480px;
+      line-height: 1.7;
+      margin: 0 auto 32px;
+    }
+
+    .badges { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+
+    .badge {
+      display: inline-block;
+      padding: 11px 26px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 400;
+      letter-spacing: 1px;
+      transition: background 0.2s, transform 0.1s;
+    }
+    .badge:hover { transform: translateY(-2px); }
+
+    .badge-primary {
+      background: rgba(255,255,255,0.9);
+      color: #222;
+    }
+    .badge-primary:hover { background: #fff; }
+
+    .badge-secondary {
+      background: rgba(255,255,255,0.12);
+      color: rgba(255,255,255,0.85);
+      border: 1px solid rgba(255,255,255,0.3);
+    }
+    .badge-secondary:hover { background: rgba(255,255,255,0.2); }
+
+    footer {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.4);
+    }
+    footer a { color: rgba(255,255,255,0.4); text-decoration: none; }
+    footer a:hover { color: rgba(255,255,255,0.7); }
   </style>
 </head>
 <body>
-  <h1>Bacca SongBook</h1>
-  <p class="subtitle">Gitarowy śpiewnik z akordami — Android, Windows, Linux</p>
-  <p>Aplikacja do zarządzania piosenkami gitarowymi z obsługą formatu ChordPro, synchronizacją z Google Drive, edytorem akordów i tabulatur oraz funkcjami AI.</p>
-  <p>
-    <a class="badge" href="https://github.com/sonnekern/bacca-songbook-releases/releases">Pobierz najnowszą wersję</a>
-    <a class="badge" href="privacy.html" style="background:#555;">Polityka prywatności</a>
-    <a class="badge" href="terms.html" style="background:#555;">Warunki korzystania</a>
-  </p>
-  <footer>
-    &copy; 2024–2026 Bacca SongBook &nbsp;|&nbsp; <a href="privacy.html">Polityka prywatności</a>
-  </footer>
+  <div class="hero">
+    <div class="hero-content">
+      <div class="title">Bacca SongBook</div>
+      <div class="motto">…istnieje świat poza internetem…</div>
+
+      <div class="divider"></div>
+
+      <p class="desc">Gitarowy śpiewnik z akordami — Android, Windows, Linux.<br>
+      ChordPro, synchronizacja z Google Drive, edytor tabulatur, AI.</p>
+
+      <div class="badges">
+        <a class="badge badge-primary" href="https://github.com/sonnekern/bacca-songbook-releases/releases">Pobierz najnowszą wersję</a>
+        <a class="badge badge-secondary" href="privacy.html">Polityka prywatności</a>
+        <a class="badge badge-secondary" href="terms.html">Warunki korzystania</a>
+      </div>
+    </div>
+
+    <footer>
+      &copy; 2024–2026 Bacca SongBook &nbsp;·&nbsp;
+      <a href="privacy.html">Prywatność</a> &nbsp;·&nbsp;
+      <a href="terms.html">Warunki</a>
+    </footer>
+  </div>
 </body>
 </html>
