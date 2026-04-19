@@ -58,10 +58,11 @@
       border-bottom: 1px solid rgba(255,255,255,0.2);
       padding-bottom: 14px;
       margin-bottom: 32px;
-      padding-right: 120px; /* miejsce na gitarzystę */
-      min-height: 80px;
+      margin-top: 200px; /* miejsce nad tytułem na gitarzystę */
+      min-height: 60px;
       display: flex;
       align-items: flex-end;
+      overflow: visible;
     }
 
     .title-row h1 {
@@ -72,12 +73,13 @@
 
     .guitarist {
       position: absolute;
-      right: -10px;
-      bottom: -10px;
-      width: 130px;
-      opacity: 0.92;
-      transform: scaleX(-1); /* odbicie — wąż skierowany w lewo, w stronę tytułu */
-      filter: drop-shadow(0 2px 6px rgba(0,0,0,0.5));
+      right: 20px;
+      bottom: 10px;
+      width: 260px;
+      opacity: 0.95;
+      transform: scaleX(-1) rotate(-15deg);
+      filter: drop-shadow(0 2px 8px rgba(0,0,0,0.4));
+      transform-origin: bottom right;
     }
 
     .date { font-size: 0.82rem; color: rgba(255,255,255,0.5); font-style: italic; margin-bottom: 32px; display: block; }
