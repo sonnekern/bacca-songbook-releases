@@ -1,9 +1,9 @@
 {
   "version": "1.2.3",
-  "build": 67,
+  "build": 68,
   "tag": "",
-  "apk_filename": "BaccaSongBook-v1.2.3-build67.apk",
+  "apk_filename": "BaccaSongBook-v1.2.3-build68.apk",
   "deb_filename": "bacca-songbook_1.2.3_amd64.deb",
   "exe_filename": "BaccaSongBook-1.2.3-Setup.exe",
-  "release_notes": "Build 67 — nowa wersja dostępna."
+  "release_notes": "Build 68 — nowa wersja dostępna."
 }
