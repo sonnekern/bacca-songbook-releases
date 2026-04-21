@@ -1,1 +1,9 @@
-{"app_name":"spiewnik","version":"1.2.3","build_number":"90","package_name":"spiewnik"}
+{
+  "version": "1.2.3",
+  "build": 90,
+  "apk_filename": "BaccaSongBook-v1.2.3-build90.apk",
+  "deb_filename": "bacca-songbook_1.2.3_amd64.deb",
+  "exe_filename": "BaccaSongBook-1.2.3-Setup.exe",
+  "tag": "v1.2.3-build90",
+  "release_notes": "Build 90 — nowa wersja dostępna."
+}
