@@ -1,9 +1,9 @@
 {
   "version": "1.2.5",
-  "build": 175,
-  "tag": "v1.2.5-build175",
-  "apk_filename": "BaccaSongBook-v1.2.5-build175.apk",
-  "deb_filename": "bacca-songbook_1.2.5-build175_amd64.deb",
-  "exe_filename": "BaccaSongBook-1.2.5-build175-Setup.exe",
-  "release_notes": "Usunięto stare błędy i wprowadzono nowe błędy. Build 175. Ludzie mają nie wiedze, ale poglądy..."
+  "build": 176,
+  "tag": "v1.2.5-build176",
+  "apk_filename": "BaccaSongBook-v1.2.5-build176.apk",
+  "deb_filename": "bacca-songbook_1.2.5-build176_amd64.deb",
+  "exe_filename": "BaccaSongBook-1.2.5-build176-Setup.exe",
+  "release_notes": "Usunięto stare błędy i wprowadzono nowe błędy. Build 176. Ludzie mają nie wiedze, ale poglądy..."
 }
