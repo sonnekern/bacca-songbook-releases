@@ -1,10 +1,10 @@
 {
   "version": "1.2.6",
-  "build": 4205,
-  "android_build": 6205,
-  "tag": "v1.2.6-build4205",
-  "apk_filename": "BaccaSongBook-v1.2.6-build4205.apk",
-  "deb_filename": "bacca-songbook_1.2.6-build4205_amd64.deb",
-  "exe_filename": "BaccaSongBook-1.2.6-build4205-Setup.exe",
-  "release_notes": "Usunięto stare błędy i wprowadzono nowe błędy. Build 4205. Ludzie mają nie wiedze, ale poglądy..."
+  "build": 4206,
+  "android_build": 6206,
+  "tag": "v1.2.6-build4206",
+  "apk_filename": "BaccaSongBook-v1.2.6-build4206.apk",
+  "deb_filename": "bacca-songbook_1.2.6-build4206_amd64.deb",
+  "exe_filename": "BaccaSongBook-1.2.6-build4206-Setup.exe",
+  "release_notes": "Usunięto stare błędy i wprowadzono nowe błędy. Build 4206. Ludzie mają nie wiedze, ale poglądy..."
 }
