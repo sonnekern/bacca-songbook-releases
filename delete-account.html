@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Usunięcie konta — Bacca SongBook</title>
+  <link rel="icon" href="favicon.png">
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.7; }
+    h1 { color: #26619C; }
+    h2 { color: #26619C; margin-top: 32px; }
+    a { color: #26619C; }
+    .step { background: #f4f8fd; border-left: 4px solid #26619C; padding: 12px 16px; margin: 12px 0; border-radius: 4px; }
+    .note { background: #fff8e1; border-left: 4px solid #f9a825; padding: 12px 16px; margin: 12px 0; border-radius: 4px; font-size: 0.95em; }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+    th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #e0e0e0; }
+    th { background: #f4f8fd; color: #26619C; }
+  </style>
+</head>
+<body>
+
+<h1>Usunięcie konta i danych — Bacca SongBook</h1>
+<p>Deweloper: <strong>SonneKern</strong> · Aplikacja: <strong>Bacca SongBook</strong></p>
+
+<p>Bacca SongBook nie tworzy własnych kont użytkowników. Logowanie odbywa się wyłącznie
+przez <strong>Google OAuth</strong>. Poniżej opisano jak usunąć swoje dane z aplikacji.</p>
+
+<h2>Jak usunąć swoje dane</h2>
+
+<div class="step"><strong>Krok 1 — Usuń dane lokalne z urządzenia</strong><br>
+Odinstaluj aplikację Bacca SongBook z urządzenia. Wszystkie piosenki, ustawienia
+i lokalne dane zostaną usunięte automatycznie.</div>
+
+<div class="step"><strong>Krok 2 — Usuń kopię zapasową z Google Drive</strong><br>
+Jeśli korzystałeś/aś z synchronizacji Drive, przejdź do
+<a href="https://drive.google.com" target="_blank">Google Drive</a> →
+folder <code>Bacca_SongBook/</code> i usuń go ręcznie.</div>
+
+<div class="step"><strong>Krok 3 — Cofnij dostęp Google OAuth</strong><br>
+Wejdź na <a href="https://myaccount.google.com/permissions" target="_blank">
+myaccount.google.com/permissions</a>, znajdź <strong>Bacca SongBook</strong>
+i kliknij „Usuń dostęp".</div>
+
+<div class="step"><strong>Krok 4 — Usuń dane z Cantus Hub (jeśli dotyczy)</strong><br>
+Jeśli korzystałeś/aś z funkcji Cantus Hub (sesje grupowe), wyślij prośbę o usunięcie
+danych na adres: <a href="mailto:bhebda@gmail.com">bhebda@gmail.com</a>
+z tytułem <em>„Usunięcie danych Cantus — [Twój nick lub email]"</em>.
+Dane zostaną usunięte w ciągu 14 dni roboczych.</div>
+
+<h2>Jakie dane zostaną usunięte</h2>
+
+<table>
+  <tr><th>Dane</th><th>Gdzie przechowywane</th><th>Co się dzieje po usunięciu</th></tr>
+  <tr><td>Piosenki i setlisty</td><td>Urządzenie (lokalnie)</td><td>Usuwane przy odinstalowaniu</td></tr>
+  <tr><td>Kopia zapasowa śpiewnika</td><td>Google Drive użytkownika</td><td>Usuwane przez użytkownika w Drive</td></tr>
+  <tr><td>Diagramy akordów</td><td>Urządzenie (lokalnie)</td><td>Usuwane przy odinstalowaniu</td></tr>
+  <tr><td>Nick i UUID sesji</td><td>Serwer Cantus Hub</td><td>Usuwane na żądanie (email)</td></tr>
+  <tr><td>Zdjęcie profilowe</td><td>Google Account</td><td>Zarządzane przez użytkownika w koncie Google</td></tr>
+</table>
+
+<h2>Dane zachowywane po usunięciu</h2>
+<div class="note">
+Bacca SongBook nie prowadzi własnej bazy użytkowników ani nie przechowuje danych
+osobowych na własnych serwerach poza sesyjnymi danymi Cantus Hub (nick, UUID),
+które są usuwane na żądanie w ciągu 14 dni.
+</div>
+
+<h2>Kontakt</h2>
+<p>W przypadku pytań lub prośby o usunięcie danych skontaktuj się:<br>
+📧 <a href="mailto:bhebda@gmail.com">bhebda@gmail.com</a></p>
+
+<hr>
+<p style="font-size:0.85em; color:#888;">
+  Ostatnia aktualizacja: czerwiec 2026 ·
+  <a href="privacy.html">Polityka prywatności</a> ·
+  <a href="terms.html">Regulamin</a>
+</p>
+
+</body>
+</html>
