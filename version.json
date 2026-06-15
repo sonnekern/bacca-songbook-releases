@@ -1,11 +1,11 @@
 {
   "version": "1.3.0",
-  "build": 6346,
-  "android_build": 8346,
-  "tag": "v1.3.0-build6346",
-  "date": "2026-06-12T23:55:57Z",
-  "apk_filename": "BaccaSongBook-v1.3.0-build6346.apk",
-  "deb_filename": "bacca-songbook_1.3.0-build6346_amd64.deb",
-  "exe_filename": "BaccaSongBook-1.3.0-build6346-Setup.exe",
-  "release_notes": "Usunięto stare błędy i wprowadzono nowe błędy. Build 6346. Ludzie mają nie wiedze, ale poglądy..."
+  "build": 6355,
+  "android_build": 8355,
+  "tag": "v1.3.0-build6355",
+  "date": "2026-06-15T13:12:29Z",
+  "apk_filename": "BaccaSongBook-v1.3.0-build6355.apk",
+  "deb_filename": "bacca-songbook_1.3.0-build6355_amd64.deb",
+  "exe_filename": "BaccaSongBook-1.3.0-build6355-Setup.exe",
+  "release_notes": "Usunięto stare błędy i wprowadzono nowe błędy. Build 6355. Ludzie mają nie wiedze, ale poglądy..."
 }
