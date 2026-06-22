@@ -110,6 +110,13 @@
 
     .dl-btn svg { flex-shrink: 0; }
 
+    .dl-btn.play-store {
+      background: #1a1a2e;
+      color: #fff;
+      border: 1px solid rgba(255,255,255,0.25);
+    }
+    .dl-btn.play-store:hover { background: #222244; }
+
     /* ── Linki pomocnicze ── */
     .links {
       display: flex;
@@ -166,6 +173,17 @@
       <div class="version-label" id="ver-label">Sprawdzam najnowszą wersję…</div>
 
       <div class="download-grid">
+        <!-- Google Play -->
+        <a class="dl-btn play-store" href="https://play.google.com/store/apps/details?id=pl.spiewnik.spiewnik" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.18 1.77C2.76 2.21 2.5 2.9 2.5 3.78v16.44c0 .88.26 1.57.68 2.01l.1.1 9.22-9.22v-.22L3.28 3.67l-.1.1z" fill="#EA4335"/>
+            <path d="M15.57 15.69l-3.07-3.07v-.23l3.07-3.07.07.04 3.64 2.07c1.04.59 1.04 1.56 0 2.15l-3.64 2.07-.07.04z" fill="#FBBC04"/>
+            <path d="M15.64 15.65l-3.14-3.14L3.18 21.83c.34.36.91.41 1.54.05l10.92-6.23z" fill="#34A853"/>
+            <path d="M15.64 8.35L4.72 2.12C4.09 1.76 3.52 1.81 3.18 2.17l9.32 9.32 3.14-3.14z" fill="#4285F4"/>
+          </svg>
+          Google Play
+        </a>
+
         <!-- Android -->
         <a class="dl-btn loading" id="btn-android" href="#" download>
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
