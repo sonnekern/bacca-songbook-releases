@@ -116,40 +116,57 @@
         <img class="guitarist" src="assets/images/logo_fun.png" alt="">
       </div>
 
-      <span class="date">Ostatnia aktualizacja: 19 kwietnia 2026</span>
+      <span class="date">Ostatnia aktualizacja: 9 sierpnia 2026</span>
 
-      <h2>1. Zakres aplikacji</h2>
-      <p>Bacca SongBook to prywatna aplikacja gitarowego śpiewnika przeznaczona do zarządzania piosenkami i akordami. Aplikacja działa na urządzeniach z systemem Android, Windows i Linux.</p>
+      <h2>1. Kto to pisze i po co</h2>
+      <p>Bacca SongBook to śpiewnik gitarowy na Androida, Windowsa i Linuksa. Nie stoi za nim spółka, dział prawny ani nikt, kto zarabia na Twoich danych. Stoi jeden człowiek i gitara, a ten dokument istnieje, bo Google go wymaga i bo uczciwie jest napisać wprost, co się z Twoimi rzeczami dzieje.</p>
 
-      <h2>2. Dane przechowywane lokalnie</h2>
-      <p>Wszystkie dane użytkownika (piosenki, akordy, ustawienia) są przechowywane wyłącznie lokalnie na urządzeniu użytkownika w bazie danych SQLite. Aplikacja nie posiada własnego serwera ani nie przesyła danych do zewnętrznych usług.</p>
+      <h2>2. Gdzie mieszkają Twoje piosenki</h2>
+      <p>Na Twoim urządzeniu. W bazie SQLite, która znika razem z aplikacją, kiedy ją odinstalujesz. Domyślnie nic stąd nie wychodzi i aplikacja jest tak towarzyska jak kamień.</p>
+      <p>Są trzy wyjątki i każdy włączasz sam: kopia zapasowa na Twoim Dysku Google, biblioteka udostępniona znajomym i wspólne śpiewanie. Póki ich nie dotkniesz, nie dotyczą Cię wcale.</p>
+      <p>Część funkcji opcjonalnych łączy się z serwerem, który stoi u mnie, w domenie sonnekern.pl. Leci wtedy wyłącznie to, co wymieniam niżej przy konkretnej funkcji. Nic poza tym, bo nic poza tym nie jest mi do niczego potrzebne.</p>
 
-      <h2>3. Integracja z Google Drive</h2>
-      <p>Aplikacja opcjonalnie umożliwia synchronizację danych z Google Drive. W tym celu użytkownik musi zalogować się na własne konto Google. Dostęp do Google Drive jest wykorzystywany wyłącznie do:</p>
+      <h2>3. Czego nie robimy</h2>
+      <p>Nie ma reklam. Nie ma analityki. Nie ma śledzenia, profilowania ani licznika sprawdzającego, jak długo wpatrujesz się w chwyt F. Nie sprzedajemy danych, bo nie mamy ich komu sprzedać i, szczerze mówiąc, nie mamy czego. Nie wysyłamy newsletterów.</p>
+      <p>Nie ma też w aplikacji sztucznej inteligencji ani rozpoznawania tekstu ze zdjęć. Kiedyś było, zostało usunięte i aplikacja nie łączy się z żadnym dostawcą takich usług.</p>
+
+      <h2>4. Dysk Google, jeśli sam zechcesz</h2>
+      <p>Możesz trzymać kopię zapasową na własnym koncie Google. Logujesz się u siebie, aplikacja dostaje dostęp wyłącznie do:</p>
       <ul>
-        <li>zapisywania kopii zapasowej bazy piosenek w folderze wskazanym przez użytkownika,</li>
-        <li>przywracania danych z tej kopii zapasowej.</li>
+        <li>zapisania kopii bazy piosenek i akordów w swoim folderze,</li>
+        <li>odtworzenia danych z tej kopii,</li>
+        <li>obsługi biblioteki dla znajomych (punkt 5).</li>
       </ul>
-      <p>Aplikacja nie odczytuje, nie modyfikuje ani nie usuwa żadnych innych plików na Google Drive użytkownika. Dane uwierzytelniające Google są przechowywane wyłącznie przez system operacyjny urządzenia i nie są wysyłane do żadnych zewnętrznych serwerów aplikacji.</p>
+      <p>Reszty Twojego Dysku aplikacja nie czyta, nie zmienia i nie kasuje. Nie interesują jej Twoje zdjęcia z wakacji ani zeznanie podatkowe. Dane logowania Google leżą w zabezpieczonym magazynie systemu na urządzeniu i nie trafiają na żaden mój serwer.</p>
 
-      <h2>4. Integracja z Google AI (Gemini)</h2>
-      <p>Aplikacja opcjonalnie umożliwia korzystanie z funkcji AI (rozpoznawanie tekstu, poprawa OCR, sugestie akordów) za pośrednictwem API Google Gemini. Korzystanie z tej funkcji wymaga podania przez użytkownika własnego klucza API. Zapytania do API Gemini mogą zawierać fragmenty tekstu piosenek. Klucz API jest przechowywany wyłącznie lokalnie na urządzeniu.</p>
+      <h2>5. Biblioteka dla znajomych</h2>
+      <p>Opcjonalne. Kiedy to włączysz, aplikacja zapisuje na Twoim Dysku plik z Twoją biblioteką i nadaje mu uprawnienie odczytu dla każdego, kto zna odnośnik. Znajomi wczytują go u siebie.</p>
+      <p>Mówiąc wprost: udostępniona biblioteka przestaje być prywatna. Przeczyta ją każdy, komu odnośnik wpadnie w ręce, także ktoś, komu go nie dawałeś. Wyłączyć możesz w każdej chwili, plik skasować z Dysku równie łatwo.</p>
 
-      <h2>5. Uprawnienia aplikacji</h2>
-      <p>Aplikacja może żądać następujących uprawnień systemowych:</p>
+      <h2>6. Wspólne śpiewanie</h2>
+      <p>Opcjonalne, działa przez mój serwer. Do sesji wchodzisz z nickiem, który widzą pozostali razem z Twoimi reakcjami.</p>
+      <p>Prowadzący sesję wysyła uczestnikom treść granej właśnie piosenki, czyli tekst i akordy. Przechodzi ona przez serwer do wszystkich uczestników i nie jest tam zapisywana. W bazie zostaje sama statystyka spotkania: kod sesji, nazwa wydarzenia, czas trwania, liczba uczestników oraz lista zagranych tytułów z wykonawcami.</p>
+      <p>Możesz dodatkowo założyć konto, żeby zarezerwować nick. Potrzebny jest wtedy adres e-mail i hasło, opcjonalnie zdjęcie profilowe. Te dane leżą na moim serwerze, nikomu ich nie udostępniam i nie wysyłam na nie niczego poza obsługą samego konta. Konto możesz usunąć.</p>
+
+      <h2>7. Sprawdzanie aktualizacji</h2>
+      <p>Aplikacja co jakiś czas pyta GitHuba o numer najnowszej wersji. Wychodzi przy tym to, co wychodzi przy każdym połączeniu z internetem, czyli adres IP urządzenia. Żadnych Twoich danych przy okazji nie doklejamy.</p>
+
+      <h2>8. Uprawnienia, czyli o co aplikacja pyta</h2>
       <ul>
-        <li><strong>Internet</strong> — do synchronizacji z Google Drive, korzystania z API AI oraz sprawdzania aktualizacji.</li>
-        <li><strong>Kamera</strong> — do funkcji OCR (rozpoznawanie tekstu z obrazu).</li>
-        <li><strong>Instalacja aplikacji</strong> — do automatycznej instalacji aktualizacji.</li>
+        <li><strong>Internet</strong> - żeby kopia trafiła na Dysk, żeby wspólne śpiewanie miało z kim rozmawiać i żeby dało się sprawdzić aktualizację.</li>
+        <li><strong>Mikrofon</strong> - wyłącznie stroik. Dźwięk leci strumieniem, aplikacja liczy z niego wysokość dźwięku i o nim zapomina. Nie jest nagrywany, nie ląduje w żadnym pliku, nie opuszcza urządzenia. Nikt nie usłyszy, co mówisz, kiedy trzecia struna znowu nie chce się nastroić.</li>
+        <li><strong>Kamera</strong> - wyłącznie kody QR: zaproszenie od znajomego i dołączanie do wspólnego śpiewania. Zdjęcia profilowe i zdjęcia wydarzeń wybierasz z galerii, aparatem aplikacja nie robi zdjęć.</li>
+        <li><strong>Pliki na urządzeniu</strong> (Android 12 i starsze) - import piosenek z plików, które sam wskażesz.</li>
+        <li><strong>Instalacja aplikacji</strong> - żeby pobrana aktualizacja mogła się zainstalować.</li>
       </ul>
 
-      <h2>6. Dane dzieci</h2>
-      <p>Aplikacja nie jest przeznaczona dla dzieci poniżej 13 roku życia i świadomie nie zbiera żadnych danych od osób w tym wieku.</p>
+      <h2>9. Dane dzieci</h2>
+      <p>Aplikacja nie jest przeznaczona dla osób poniżej 13 roku życia i świadomie nie zbiera od nich żadnych danych. Młodszym gitarzystom serdecznie kibicujemy, tylko niech konto zakłada ktoś dorosły.</p>
 
-      <h2>7. Zmiany polityki prywatności</h2>
-      <p>Wszelkie zmiany niniejszej polityki prywatności będą publikowane na tej stronie.</p>
+      <h2>10. Zmiany polityki prywatności</h2>
+      <p>Jeśli coś się zmieni, nowa wersja pojawi się na tej stronie. Data u góry powie Ci, kiedy ostatnio ktoś tu zaglądał.</p>
 
-      <h2>8. Kontakt</h2>
+      <h2>11. Kontakt</h2>
       <p>W razie pytań dotyczących prywatności prosimy o kontakt: <a href="mailto:bhebda@gmail.com" style="color:rgba(255,255,255,0.7)">bhebda@gmail.com</a></p>
 
       <footer>
