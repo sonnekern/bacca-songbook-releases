@@ -4,77 +4,163 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Usunięcie konta - Bacca SongBook</title>
-  <link rel="icon" href="favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@300;400&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Arial, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.7; }
-    h1 { color: #26619C; }
-    h2 { color: #26619C; margin-top: 32px; }
-    a { color: #26619C; }
-    .step { background: #f4f8fd; border-left: 4px solid #26619C; padding: 12px 16px; margin: 12px 0; border-radius: 4px; }
-    .note { background: #fff8e1; border-left: 4px solid #f9a825; padding: 12px 16px; margin: 12px 0; border-radius: 4px; font-size: 0.95em; }
-    table { width: 100%; border-collapse: collapse; margin: 16px 0; }
-    th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #e0e0e0; }
-    th { background: #f4f8fd; color: #26619C; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { min-height: 100%; font-family: 'Lato', sans-serif; color: #fff; }
+
+    .bg {
+      min-height: 100vh;
+      background: url('assets/images/obraz_hq.jpg') center center / cover no-repeat fixed;
+      position: relative;
+    }
+    .bg::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.62);
+    }
+
+    .wrap {
+      position: relative;
+      z-index: 1;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 60px 28px 80px;
+    }
+
+    .logo-block {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .logo-block img.logo-main {
+      width: 72px;
+      opacity: 0.92;
+      margin-bottom: 10px;
+    }
+    .logo-title {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3rem;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.7);
+    }
+    .logo-motto {
+      font-size: 0.82rem;
+      font-weight: 300;
+      letter-spacing: 3px;
+      color: rgba(255,255,255,0.6);
+      font-style: italic;
+      margin-top: 4px;
+    }
+
+    /* Tytuł z gitarzystą */
+    .title-row {
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+      padding-bottom: 6px;
+      margin-top: 48px;
+      margin-bottom: 32px;
+      display: flex;
+      align-items: flex-end;
+      gap: 16px;
+    }
+
+    .title-row h1 {
+      font-size: 1.6rem;
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+
+    .guitarist {
+      width: 240px;
+      opacity: 0.95;
+      filter: drop-shadow(0 2px 8px rgba(0,0,0,0.4));
+      flex-shrink: 0;
+    }
+
+    .date { font-size: 0.82rem; color: rgba(255,255,255,0.5); font-style: italic; margin-bottom: 32px; display: block; }
+
+    h2 {
+      font-weight: 400;
+      color: rgba(255,255,255,0.7);
+      margin-top: 36px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+    }
+    p, ul { font-size: 0.97rem; font-weight: 300; line-height: 1.85; color: rgba(255,255,255,0.85); }
+    ul { padding-left: 20px; margin-top: 8px; }
+    ul li { margin-bottom: 5px; }
+
+    footer {
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.35);
+    }
+    footer a { color: rgba(255,255,255,0.35); text-decoration: none; }
+    footer a:hover { color: rgba(255,255,255,0.7); }
+      table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 0.92rem; font-weight: 300; }
+    th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid rgba(255,255,255,0.15); vertical-align: top; color: rgba(255,255,255,0.85); }
+    th { font-weight: 400; color: rgba(255,255,255,0.6); text-transform: uppercase; font-size: 0.72rem; letter-spacing: 1px; }
+    .tabela { overflow-x: auto; }
+    a { color: rgba(255,255,255,0.85); }
   </style>
 </head>
 <body>
+  <div class="bg">
+    <div class="wrap">
 
-<h1>Usunięcie konta i danych - Bacca SongBook</h1>
-<p>Deweloper: <strong>SonneKern</strong> · Aplikacja: <strong>Bacca SongBook</strong></p>
+      <div class="logo-block">
+        <div class="logo-title">Bacca SongBook</div>
+        <div class="logo-motto">…istnieje świat poza internetem…</div>
+      </div>
 
-<p>Bacca SongBook nie tworzy własnych kont użytkowników. Logowanie odbywa się wyłącznie
-przez <strong>Google OAuth</strong>. Poniżej opisano jak usunąć swoje dane z aplikacji.</p>
+      <div class="title-row">
+        <h1>Usunięcie konta i danych</h1>
+        <img class="guitarist" src="assets/images/logo_fun.png" alt="">
+      </div>
 
-<h2>Jak usunąć swoje dane</h2>
+      <span class="date">Ostatnia aktualizacja: 6 października 2026</span>
 
-<div class="step"><strong>Krok 1 - Usuń dane lokalne z urządzenia</strong><br>
-Odinstaluj aplikację Bacca SongBook z urządzenia. Wszystkie piosenki, ustawienia
-i lokalne dane zostaną usunięte automatycznie.</div>
+      <h2>1. Najpierw dobra wiadomość</h2>
+      <p>Piosenki, setlisty, chwyty i ustawienia nigdy nie opuszczają Twojego urządzenia, więc nie ma czego od nas odzyskiwać. Konto u mnie masz tylko wtedy, gdy założyłeś je do wspólnego śpiewania: adresem e-mail z hasłem albo kontem Google. Rozstanie jest bezbolesne i nie trzeba przy nim tłumaczyć, że to nie my, tylko Ty.</p>
 
-<div class="step"><strong>Krok 2 - Usuń kopię zapasową z Google Drive</strong><br>
-Jeśli korzystałeś/aś z synchronizacji Drive, przejdź do
-<a href="https://drive.google.com" target="_blank">Google Drive</a> →
-folder <code>Bacca_SongBook/</code> i usuń go ręcznie.</div>
+      <h2>2. Usunięcie konta w aplikacji</h2>
+      <p>Wspólne śpiewanie, Ustawienia konta, <strong>Usuń konto</strong>. Aplikacja poprosi jeszcze o hasło (albo o przepisanie adresu e-mail, jeśli logujesz się przez Google), żeby nikt nie zrobił tego za Ciebie dla żartu. Potem konto znika od razu, bez okresu wypowiedzenia i bez ankiety, dlaczego odchodzisz.</p>
 
-<div class="step"><strong>Krok 3 - Cofnij dostęp Google OAuth</strong><br>
-Wejdź na <a href="https://myaccount.google.com/permissions" target="_blank">
-myaccount.google.com/permissions</a>, znajdź <strong>Bacca SongBook</strong>
-i kliknij „Usuń dostęp".</div>
+      <h2>3. Usunięcie konta bez aplikacji</h2>
+      <p>Telefon utopiony w jeziorze, aplikacja odinstalowana w przypływie złości na chwyt F? Napisz z adresu przypisanego do konta na <a href="mailto:songbook@sonnekern.pl">songbook@sonnekern.pl</a>, w tytule: <em>Usunięcie konta - [Twój nick lub e-mail]</em>. Usunę konto w ciągu 14 dni roboczych i odpiszę, że po sprawie. Tą samą drogą poprosisz o skasowanie zgłoszonych błędów albo zaproponowanych chwytów.</p>
 
-<div class="step"><strong>Krok 4 - Usuń dane z Cantus Hub (jeśli dotyczy)</strong><br>
-Jeśli korzystałeś/aś z funkcji Cantus Hub (sesje grupowe), wyślij prośbę o usunięcie
-danych na adres: <a href="mailto:songbook@sonnekern.pl">songbook@sonnekern.pl</a>
-z tytułem <em>„Usunięcie danych Cantus - [Twój nick lub email]"</em>.
-Dane zostaną usunięte w ciągu 14 dni roboczych.</div>
+      <h2>4. Co znika razem z kontem</h2>
+      <div class="tabela">
+      <table>
+        <tr><th>Dane</th><th>Gdzie leżą</th><th>Co się z nimi dzieje</th></tr>
+        <tr><td>Adres e-mail, hasło, nick, zdjęcie profilowe</td><td>mój serwer</td><td>znikają razem z kontem, a nick wraca do puli</td></tr>
+        <tr><td>Wydarzenia, które organizowałeś, i Twoje zapisy na cudze</td><td>mój serwer</td><td>znikają razem z kontem</td></tr>
+        <tr><td>Zgłoszenia błędów i pomysłów</td><td>mój serwer</td><td>na prośbę mailem</td></tr>
+        <tr><td>Zaproponowane chwyty</td><td>mój serwer</td><td>na prośbę mailem; chwyt już zatwierdzony zostaje w bazie, ale bez śladu po Tobie</td></tr>
+        <tr><td>Piosenki, setlisty, chwyty, ustawienia</td><td>Twoje urządzenie</td><td>znikają przy odinstalowaniu</td></tr>
+        <tr><td>Kopia zapasowa i biblioteka dla znajomych</td><td>Twój Dysk Google</td><td>usuwasz sam (punkt 5)</td></tr>
+      </table>
+      </div>
 
-<h2>Jakie dane zostaną usunięte</h2>
+      <h2>5. Twój Dysk Google</h2>
+      <p>Do Twojego Dysku nie mam dostępu, więc tu musisz zakasać rękawy sam. Jeśli korzystałeś z kopii zapasowej albo biblioteki dla znajomych, skasuj folder <strong>Bacca_SongBook</strong> na <a href="https://drive.google.com" target="_blank">Dysku Google</a>, a aplikacji odbierz klucze na <a href="https://myaccount.google.com/permissions" target="_blank">myaccount.google.com/permissions</a>.</p>
 
-<table>
-  <tr><th>Dane</th><th>Gdzie przechowywane</th><th>Co się dzieje po usunięciu</th></tr>
-  <tr><td>Piosenki i setlisty</td><td>Urządzenie (lokalnie)</td><td>Usuwane przy odinstalowaniu</td></tr>
-  <tr><td>Kopia zapasowa śpiewnika</td><td>Google Drive użytkownika</td><td>Usuwane przez użytkownika w Drive</td></tr>
-  <tr><td>Diagramy akordów</td><td>Urządzenie (lokalnie)</td><td>Usuwane przy odinstalowaniu</td></tr>
-  <tr><td>Nick i UUID sesji</td><td>Serwer Cantus Hub</td><td>Usuwane na żądanie (email)</td></tr>
-  <tr><td>Zdjęcie profilowe</td><td>Google Account</td><td>Zarządzane przez użytkownika w koncie Google</td></tr>
-</table>
+      <h2>6. Co zostaje</h2>
+      <p>Tylko statystyka spotkań wspólnego śpiewania: kod sesji, nazwa wydarzenia, czas trwania, liczba uczestników i lista zagranych tytułów. Nikogo w niej nie ma z imienia ani nicku, jest za to dowód, że &bdquo;Bieszczadzkie anioły&rdquo; padły trzeci raz w ciągu wieczoru.</p>
 
-<h2>Dane zachowywane po usunięciu</h2>
-<div class="note">
-Bacca SongBook nie prowadzi własnej bazy użytkowników ani nie przechowuje danych
-osobowych na własnych serwerach poza sesyjnymi danymi Cantus Hub (nick, UUID),
-które są usuwane na żądanie w ciągu 14 dni.
-</div>
+      <h2>7. Kontakt</h2>
+      <p>Pytania, wątpliwości, pożegnalne piosenki: <a href="mailto:songbook@sonnekern.pl" style="color:rgba(255,255,255,0.7)">songbook@sonnekern.pl</a></p>
 
-<h2>Kontakt</h2>
-<p>W przypadku pytań lub prośby o usunięcie danych skontaktuj się:<br>
-📧 <a href="mailto:songbook@sonnekern.pl">songbook@sonnekern.pl</a></p>
+      <footer>
+        <a href="index.html">← Bacca SongBook</a> &nbsp;·&nbsp;
+        <a href="privacy.html">Polityka prywatności</a> &nbsp;·&nbsp;
+        <a href="terms.html">Warunki korzystania</a>
+      </footer>
 
-<hr>
-<p style="font-size:0.85em; color:#888;">
-  Ostatnia aktualizacja: czerwiec 2026 ·
-  <a href="privacy.html">Polityka prywatności</a> ·
-  <a href="terms.html">Regulamin</a>
-</p>
-
+    </div>
+  </div>
 </body>
 </html>
