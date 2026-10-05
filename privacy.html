@@ -116,14 +116,14 @@
         <img class="guitarist" src="assets/images/logo_fun.png" alt="">
       </div>
 
-      <span class="date">Ostatnia aktualizacja: 9 sierpnia 2026</span>
+      <span class="date">Ostatnia aktualizacja: 6 października 2026</span>
 
       <h2>1. Kto to pisze i po co</h2>
       <p>Bacca SongBook to śpiewnik gitarowy na Androida, Windowsa i Linuksa. Nie stoi za nim spółka, dział prawny ani nikt, kto zarabia na Twoich danych. Stoi jeden człowiek i gitara, a ten dokument istnieje, bo Google go wymaga i bo uczciwie jest napisać wprost, co się z Twoimi rzeczami dzieje.</p>
 
       <h2>2. Gdzie mieszkają Twoje piosenki</h2>
-      <p>Na Twoim urządzeniu. W bazie SQLite, która znika razem z aplikacją, kiedy ją odinstalujesz. Domyślnie nic stąd nie wychodzi i aplikacja jest tak towarzyska jak kamień.</p>
-      <p>Są trzy wyjątki i każdy włączasz sam: kopia zapasowa na Twoim Dysku Google, biblioteka udostępniona znajomym i wspólne śpiewanie. Póki ich nie dotkniesz, nie dotyczą Cię wcale.</p>
+      <p>Na Twoim urządzeniu. W bazie SQLite, która znika razem z aplikacją, kiedy ją odinstalujesz. Domyślnie żadne Twoje dane stąd nie wychodzą i aplikacja jest tak towarzyska jak kamień.</p>
+      <p>Wyjątki włączasz sam: kopia zapasowa na Twoim Dysku Google, biblioteka udostępniona znajomym, wspólne śpiewanie i wydarzenia, wysłanie własnego chwytu do wspólnej bazy oraz zgłoszenie błędu. Póki ich nie dotkniesz, nie dotyczą Cię wcale.</p>
       <p>Część funkcji opcjonalnych łączy się z serwerem, który stoi u mnie, w domenie sonnekern.pl. Leci wtedy wyłącznie to, co wymieniam niżej przy konkretnej funkcji. Nic poza tym, bo nic poza tym nie jest mi do niczego potrzebne.</p>
 
       <h2>3. Czego nie robimy</h2>
@@ -142,31 +142,48 @@
       <h2>5. Biblioteka dla znajomych</h2>
       <p>Opcjonalne. Kiedy to włączysz, aplikacja zapisuje na Twoim Dysku plik z Twoją biblioteką i nadaje mu uprawnienie odczytu dla każdego, kto zna odnośnik. Znajomi wczytują go u siebie.</p>
       <p>Mówiąc wprost: udostępniona biblioteka przestaje być prywatna. Przeczyta ją każdy, komu odnośnik wpadnie w ręce, także ktoś, komu go nie dawałeś. Wyłączyć możesz w każdej chwili, plik skasować z Dysku równie łatwo.</p>
+      <p>Zaproszenie znajomego (kodem QR albo odnośnikiem) przechodzi przez mój serwer. Leci w nim Twój kod znajomego, nazwa Twojej biblioteki i odnośnik do jej pliku na Dysku, a w odpowiedzi kod osoby, która zaproszenie przyjęła.</p>
 
       <h2>6. Wspólne śpiewanie</h2>
       <p>Opcjonalne, działa przez mój serwer. Do sesji wchodzisz z nickiem, który widzą pozostali razem z Twoimi reakcjami.</p>
       <p>Prowadzący sesję wysyła uczestnikom treść granej właśnie piosenki, czyli tekst i akordy. Przechodzi ona przez serwer do wszystkich uczestników i nie jest tam zapisywana. W bazie zostaje sama statystyka spotkania: kod sesji, nazwa wydarzenia, czas trwania, liczba uczestników oraz lista zagranych tytułów z wykonawcami.</p>
       <p>Możesz dodatkowo założyć konto, żeby zarezerwować nick. Potrzebny jest wtedy adres e-mail i hasło, opcjonalnie zdjęcie profilowe. Te dane leżą na moim serwerze, nikomu ich nie udostępniam i nie wysyłam na nie niczego poza obsługą samego konta. Konto możesz usunąć.</p>
 
-      <h2>7. Sprawdzanie aktualizacji</h2>
-      <p>Aplikacja co jakiś czas pyta GitHuba o numer najnowszej wersji. Wychodzi przy tym to, co wychodzi przy każdym połączeniu z internetem, czyli adres IP urządzenia. Żadnych Twoich danych przy okazji nie doklejamy.</p>
+      <h2>7. Wydarzenia</h2>
+      <p>Opcjonalne, część wspólnego śpiewania, wymaga konta. Organizator zakłada wydarzenie: tytuł, opis, miejsce wpisane ręcznie, datę, limit miejsc i ewentualnie zdjęcie. To wszystko leży na moim serwerze i widzą to osoby, którym wydarzenie pokazano (albo wszyscy, jeśli jest publiczne).</p>
+      <p>Organizator może zaprosić kogoś adresem e-mail. Ten adres trafia na mój serwer, który wysyła na niego jedno zaproszenie. Zapisując się na wydarzenie, pokazujesz organizatorowi swój nick. Lokalizacji urządzenia aplikacja nie odczytuje - miejsce to zwykły tekst.</p>
 
-      <h2>8. Uprawnienia, czyli o co aplikacja pyta</h2>
+      <h2>8. Wspólna baza chwytów</h2>
+      <p>Diagramy chwytów aplikacja pobiera z mojego serwera, żeby działały bez internetu. Leci przy tym samo zapytanie o bazę, czyli to, co przy każdym połączeniu: adres IP.</p>
+      <p>Własny chwyt możesz zaproponować do wspólnej bazy. Wymaga to konta i wysyła sam chwyt (nazwę, ułożenie palców, instrument i strój) razem z oznaczeniem Twojego konta. Po zatwierdzeniu chwyt widzą wszyscy użytkownicy, bez Twoich danych.</p>
+
+      <h2>9. Zgłoszenia błędów i pomysłów</h2>
+      <p>Zgłoszenie wysyłasz sam. Leci w nim to, co napiszesz, numer wersji aplikacji oraz nazwa i wersja systemu. Adres e-mail do odpowiedzi jest opcjonalny - bez niego zgłoszenie jest anonimowe. Zgłoszenie trafia do mnie mailem i zostaje na moim serwerze, dopóki go nie zamknę.</p>
+      <p>W trybie betatestera (włączasz go w ustawieniach) zgłoszenie może dodatkowo zawierać zrzut ekranu i dziennik diagnostyczny. Zrzut pokazuje to, co było na ekranie. Dziennik to techniczny zapis działania aplikacji i może zawierać tytuły otwieranych piosenek oraz wpisane wyszukiwania; adresy e-mail i klucze są w nim zamazywane. Zrzut widzisz przed wysłaniem, a dziennik możesz odznaczyć.</p>
+
+      <h2>10. Sprawdzanie aktualizacji</h2>
+      <p>Wersja spoza Google Play co jakiś czas pyta GitHuba o numer najnowszej wersji. Wychodzi przy tym to, co wychodzi przy każdym połączeniu z internetem, czyli adres IP urządzenia. Żadnych Twoich danych przy okazji nie doklejamy. Wersja z Google Play aktualizuje się przez sklep i GitHuba nie pyta.</p>
+
+      <h2>11. Uprawnienia, czyli o co aplikacja pyta</h2>
       <ul>
-        <li><strong>Internet</strong> - żeby kopia trafiła na Dysk, żeby wspólne śpiewanie miało z kim rozmawiać i żeby dało się sprawdzić aktualizację.</li>
+        <li><strong>Internet</strong> - kopia na Dysku, wspólne śpiewanie i wydarzenia, baza chwytów, zgłoszenia i sprawdzanie aktualizacji.</li>
         <li><strong>Mikrofon</strong> - wyłącznie stroik. Dźwięk leci strumieniem, aplikacja liczy z niego wysokość dźwięku i o nim zapomina. Nie jest nagrywany, nie ląduje w żadnym pliku, nie opuszcza urządzenia. Nikt nie usłyszy, co mówisz, kiedy trzecia struna znowu nie chce się nastroić.</li>
         <li><strong>Kamera</strong> - wyłącznie kody QR: zaproszenie od znajomego i dołączanie do wspólnego śpiewania. Zdjęcia profilowe i zdjęcia wydarzeń wybierasz z galerii, aparatem aplikacja nie robi zdjęć.</li>
         <li><strong>Pliki na urządzeniu</strong> (Android 12 i starsze) - import piosenek z plików, które sam wskażesz.</li>
-        <li><strong>Instalacja aplikacji</strong> - żeby pobrana aktualizacja mogła się zainstalować.</li>
+        <li><strong>Instalacja aplikacji</strong> (tylko wersja spoza Google Play) - żeby pobrana aktualizacja mogła się zainstalować.</li>
       </ul>
 
-      <h2>9. Dane dzieci</h2>
+      <h2 id="usuwanie-konta">12. Usuwanie konta i danych</h2>
+      <p>Konto usuniesz w aplikacji: Wspólne śpiewanie, Ustawienia konta, Usuń konto. Znika wtedy adres e-mail, hasło, nick i zdjęcie profilowe.</p>
+      <p>Bez aplikacji napisz z adresu przypisanego do konta na <a href="mailto:songbook@sonnekern.pl">songbook@sonnekern.pl</a> - konto usunę w ciągu 30 dni i potwierdzę mailem. Tą samą drogą poprosisz o usunięcie zgłoszeń albo zaproponowanych chwytów. Statystyki zagranych spotkań nie wskazują osób i zostają.</p>
+
+      <h2>13. Dane dzieci</h2>
       <p>Aplikacja nie jest przeznaczona dla osób poniżej 13 roku życia i świadomie nie zbiera od nich żadnych danych. Młodszym gitarzystom serdecznie kibicujemy, tylko niech konto zakłada ktoś dorosły.</p>
 
-      <h2>10. Zmiany polityki prywatności</h2>
+      <h2>14. Zmiany polityki prywatności</h2>
       <p>Jeśli coś się zmieni, nowa wersja pojawi się na tej stronie. Data u góry powie Ci, kiedy ostatnio ktoś tu zaglądał.</p>
 
-      <h2>11. Kontakt</h2>
+      <h2>15. Kontakt</h2>
       <p>W razie pytań dotyczących prywatności prosimy o kontakt: <a href="mailto:songbook@sonnekern.pl" style="color:rgba(255,255,255,0.7)">songbook@sonnekern.pl</a></p>
 
       <footer>
