@@ -1,14 +1,14 @@
 {
   "version": "1.3.0",
-  "build": 6538,
-  "android_build": 8538,
-  "tag": "v1.3.0-build6538",
-  "date": "2026-11-08T13:46:39Z",
-  "apk_filename": "BaccaSongBook-v1.3.0-build6538.apk",
-  "deb_filename": "bacca-songbook_1.3.0-build6538_amd64.deb",
-  "exe_filename": "BaccaSongBook-1.3.0-build6538-Setup.exe",
-  "apk_sha256": "75ad883d51b394fb1f16e1da872df1f7d47549e9d37624bc184e36a2d420b6b4",
-  "deb_sha256": "5d5d1ee2f3d10d6972bafc00228a797c5069e58da4ce4275b715d4031477f5ea",
-  "exe_sha256": "2075218503408a6c53004efb38f5c06bdbe17fd2e8dc73cab28faca0edd14b4d",
-  "release_notes": "Usunięto stare błędy i wprowadzono nowe błędy. Build 6538. Ludzie mają nie wiedze, ale poglądy..."
+  "build": 6539,
+  "android_build": 8539,
+  "tag": "v1.3.0-build6539",
+  "date": "2026-11-14T13:19:17Z",
+  "apk_filename": "BaccaSongBook-v1.3.0-build6539.apk",
+  "deb_filename": "bacca-songbook_1.3.0-build6539_amd64.deb",
+  "exe_filename": "BaccaSongBook-1.3.0-build6539-Setup.exe",
+  "apk_sha256": "e45f3006e33d469df067e4997414938b20b6df87c509cbcfc478c0f699f66ea8",
+  "deb_sha256": "51579a410cb95e18d2b212082650dcdbb8784a96134bc82485ebcd4aff5d7e18",
+  "exe_sha256": "b1de6dddbc36a5f832a6bcfd7e7918c616966f3896aa62f0306e7ed0bf64b319",
+  "release_notes": "Usunięto stare błędy i wprowadzono nowe błędy. Build 6539. Ludzie mają nie wiedze, ale poglądy..."
 }
